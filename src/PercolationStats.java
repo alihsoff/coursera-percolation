@@ -3,7 +3,7 @@ import edu.princeton.cs.algs4.StdStats;
 
 public class PercolationStats {
     private double[] percolationThreshold;
-
+    int times;
     // perform independent trials on an n-by-n grid
     public PercolationStats(int n, int trials){
         if (n <= 0)
@@ -25,6 +25,7 @@ public class PercolationStats {
             }
             percolationThreshold[i] = (double) percolation.numberOfOpenSites() / size;
         }
+        times = percolationThreshold.length;
     }
 
     // sample mean of percolation threshold
@@ -39,12 +40,12 @@ public class PercolationStats {
 
     // low endpoint of 95% confidence interval
     public double confidenceLo(){
-        return (mean() - 1.96) / Math.sqrt(percolationThreshold.length);
+        return mean() - ((1.96 * Math.sqrt(stddev())) / Math.sqrt(times));
     }
 
     // high endpoint of 95% confidence interval
     public double confidenceHi(){
-        return (mean() + 1.96) / Math.sqrt(percolationThreshold.length);
+        return mean() + ((1.96 * Math.sqrt(stddev())) / Math.sqrt(times));
     }
 
     // test client (see below)
