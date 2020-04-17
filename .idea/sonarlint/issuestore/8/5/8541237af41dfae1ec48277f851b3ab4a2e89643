@@ -1,0 +1,8 @@
+
+p	java:S116"ORename this field "SIZE" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ğºüıøÿÿÿÿ8‰ËÎ¾˜.
+J
+java:S1659"(Declare "SINK_INDEX" on a separate line.(ğºüıøÿÿÿÿ8£Ú²Ë˜.
+L
+java:S1659"*Declare "SOURCE_INDEX" on a separate line.(ğºüıøÿÿÿÿ8ã÷¿˜.
+x	java:S116"WRename this field "SOURCE_INDEX" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ğºüıøÿÿÿÿ8ã÷¿˜.
+v	java:S116"URename this field "SINK_INDEX" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ğºüıøÿÿÿÿ8£Ú²Ë˜.
